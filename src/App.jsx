@@ -70,12 +70,12 @@ function App() {
       <div className="topbar">
         <div className="container">
           <div className="topbar-left">
-            <span><MapPin size={14} style={{ verticalAlign: -2 }} /> 85 Nguyễn Phúc Nguyên, P. Phú Thủy, TP. Phan Thiết</span>
+            <span><MapPin size={14} style={{ verticalAlign: -2 }} /> 05 Trương Văn Ly, P. Đức Long, TP. Phan Thiết, Bình Thuận</span>
             <span>Giờ mở cửa: 08:00 - 20:00 (Cả CN & Lễ)</span>
           </div>
           <div className="topbar-right">
-            <span>Kỹ thuật & bảo hành: <strong>0949.951.951</strong></span>
-            <span>Hotline tư vấn: <strong style={{ color: '#ffeb3b' }}>0938.988.999</strong></span>
+            <span>Kỹ thuật & bảo hành: <strong>0388.221.155</strong></span>
+            <span>Hotline tư vấn: <strong style={{ color: '#ffeb3b' }}>0388.221.155</strong></span>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ function App() {
               </div>
               <div>
                 <div className="hotline-label">Tư vấn bán hàng</div>
-                <div className="hotline-phone">0938.988.999</div>
+                <div className="hotline-phone">0388.221.155</div>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ function App() {
                     Nguyên zin 100% - Siêu bền bỉ hoạt động 24/7. Trọn bộ kèm màn hình LCD giá cực tốt. Tặng phím chuột + lắp đặt tại nhà miễn phí!
                   </p>
                   <a href="tel:0938988999" className="banner-cta-btn">
-                    <Phone size={18} /> GỌI TƯ VẤN: 0938.988.999
+                    <Phone size={18} /> GỌI TƯ VẤN: 0388.221.155
                   </a>
                 </div>
               </div>
@@ -360,7 +360,7 @@ function App() {
                   <div className="service-price">{s.price}</div>
                   <p className="service-desc">{s.desc}</p>
                   <a href="tel:0949951951" className="btn-call-service">
-                    <Phone size={16} /> Liên hệ kỹ thuật: 0949.951.951
+                    <Phone size={16} /> Liên hệ kỹ thuật: 0388.221.155
                   </a>
                 </div>
               ))}
@@ -401,15 +401,15 @@ function App() {
             <div className="contact-grid">
               <div className="contact-info-col">
                 <h3>CỬA HÀNG LAPTOP PHAN THIẾT TK</h3>
-                <p><strong>Địa chỉ:</strong> 85 Nguyễn Phúc Nguyên, Phường Phú Thủy, TP. Phan Thiết, Tỉnh Bình Thuận</p>
-                <p><strong>Hotline bán hàng:</strong> 0938.988.999 (Zalo / Call)</p>
-                <p><strong>Hỗ trợ kỹ thuật:</strong> 0949.951.951</p>
+                <p><strong>Địa chỉ:</strong> 05 Trương Văn Ly, P. Đức Long, TP. Phan Thiết, Bình Thuận</p>
+                <p><strong>Hotline bán hàng:</strong> 0388.221.155 (Zalo / Call)</p>
+                <p><strong>Hỗ trợ kỹ thuật:</strong> 0388.221.155</p>
                 <p><strong>Email:</strong> hotro@laptopphanthiettk.vn</p>
                 <p><strong>Thời gian mở cửa:</strong> 08:00 - 20:00 (Từ thứ 2 đến Chủ nhật)</p>
                 <div style={{ marginTop: 20, background: '#f8fafc', padding: 16, borderRadius: 6, border: '1px solid #e2e8f0' }}>
                   <h4 style={{ color: 'var(--header-blue)', marginBottom: 8 }}>Chỉ dẫn đường đi:</h4>
                   <p style={{ fontSize: '0.88rem', color: '#475569' }}>
-                    Nằm trên đường Nguyễn Phúc Nguyên giao cắt Thủ Khoa Huân và Hùng Vương, gần trường THPT Phan Bội Châu. Có bãi đỗ xe ô tô và xe máy rộng rãi miễn phí.
+                    Địa chỉ: 05 Trương Văn Ly, P. Đức Long, TP. Phan Thiết, Bình Thuận. Có chỗ đậu xe rộng rãi, thuận tiện ghé xem máy.
                   </p>
                 </div>
               </div>
@@ -451,8 +451,8 @@ function App() {
         <div className="container footer-grid">
           <div className="footer-col">
             <h4>LAPTOP PHAN THIẾT TK</h4>
-            <p><strong>Cửa hàng:</strong> 85 Nguyễn Phúc Nguyên, P. Phú Thủy, TP. Phan Thiết, Bình Thuận</p>
-            <p><strong>Hotline / Zalo:</strong> 0938.988.999 - 0949.951.951</p>
+            <p><strong>Cửa hàng:</strong> 05 Trương Văn Ly, P. Đức Long, TP. Phan Thiết, Bình Thuận, Bình Thuận</p>
+            <p><strong>Hotline / Zalo:</strong> 0388.221.155</p>
             <p><strong>Email:</strong> hotro@laptopphanthiettk.vn</p>
             <p>Hệ thống cung cấp máy tính đồng bộ Dell, HP, Workstation đồ hoạ, laptop doanh nhân USA, PC Gaming RGB và giải pháp Camera an ninh hàng đầu tại Bình Thuận.</p>
           </div>
@@ -480,8 +480,8 @@ function App() {
 
           <div className="footer-col">
             <h4>TỔNG ĐÀI HỖ TRỢ</h4>
-            <p>Tư vấn bán hàng: <strong>0938.988.999</strong></p>
-            <p>Kỹ thuật & bảo hành: <strong>0949.951.951</strong></p>
+            <p>Tư vấn bán hàng: <strong>0388.221.155</strong></p>
+            <p>Kỹ thuật & bảo hành: <strong>0388.221.155</strong></p>
             <p>Thời gian làm việc: 8:00 - 20:00 hàng ngày</p>
           </div>
         </div>
@@ -572,7 +572,7 @@ function App() {
                   fontSize: '0.95rem'
                 }}
               >
-                GỌI MUA CẤU HÌNH NÀY (0938.988.999)
+                GỌI MUA CẤU HÌNH NÀY (0388.221.155)
               </a>
             </div>
           </div>

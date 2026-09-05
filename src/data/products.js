@@ -17,7 +17,7 @@ export const products = [
     badge: 'Bán chạy',
     promoBadge: 'Có khuyến mãi',
     name: 'Máy bộ Dell Optiplex 3050 SFF + LCD DELL 20 inch Học tập, Văn phòng',
-    image: '/dell-optiplex-3050.jpg',
+    image: '/pc-dell-3050.jpg',
     price: 7150000,
     oldPrice: 8200000,
     specs: [
@@ -44,7 +44,7 @@ export const products = [
     badge: 'Bán chạy',
     promoBadge: 'Khuyên dùng',
     name: 'Máy bộ Dell Optiplex 7050 Micro Mini PC + Màn Dell 22 inch IPS',
-    image: '/dell-optiplex-3050.jpg',
+    image: '/pc-dell-3050.jpg',
     price: 7850000,
     oldPrice: 8900000,
     specs: [
@@ -70,7 +70,7 @@ export const products = [
     badge: 'Đời mới',
     promoBadge: 'Bán chạy',
     name: 'Máy bộ Dell Optiplex 3070 SFF Core i5 Gen 9 + LCD Dell 24 inch tràn viền',
-    image: '/dell-optiplex-3050.jpg',
+    image: '/pc-dell-3050.jpg',
     price: 9450000,
     oldPrice: 10800000,
     specs: [
@@ -98,7 +98,7 @@ export const products = [
     badge: 'Khuyên dùng',
     promoBadge: 'Có khuyến mãi',
     name: 'Máy bộ HP ProDesk 400 G6 SFF + LCD HP 22 inch Full HD Doanh Nghiệp',
-    image: '/hp-prodesk-400.jpg',
+    image: '/pc-hp-g6.jpg',
     price: 7450000,
     oldPrice: 8500000,
     specs: [
@@ -124,7 +124,7 @@ export const products = [
     badge: 'Giá tốt',
     promoBadge: 'Học sinh',
     name: 'Máy bộ HP ProDesk 400 G4 SFF + Màn hình HP 20 inch Bền bỉ',
-    image: '/hp-prodesk-400.jpg',
+    image: '/pc-hp-g6.jpg',
     price: 5200000,
     oldPrice: 5900000,
     specs: [
@@ -227,7 +227,7 @@ export const products = [
     badge: 'Hot nhất 2026',
     promoBadge: 'Bể Cá LED RGB',
     name: 'Bộ PC Gaming Core i5 12400F • VGA GTX 1660 Super • Vỏ Bể Cá LED RGB',
-    image: '/pc-gaming-rgb.jpg',
+    image: '/pc-gaming-b365.jpg',
     price: 11800000,
     oldPrice: 13500000,
     specs: [
@@ -254,7 +254,7 @@ export const products = [
     badge: 'Chiến Game AAA',
     promoBadge: 'Cấu hình khủng',
     name: 'Bộ PC Cao Cấp Core i7 13700K • Tản Nhiệt Nước 360 • RTX 4070 12GB',
-    image: '/pc-gaming-i7.jpg',
+    image: '/pc-gaming-h310.jpg',
     price: 28500000,
     oldPrice: 31900000,
     specs: [
@@ -280,7 +280,7 @@ export const products = [
     badge: 'Tiết kiệm',
     promoBadge: 'Văn phòng - Bán hàng',
     name: 'Bộ PC Văn Phòng Intel G6400 / RAM 8GB / SSD 256GB + Màn Hình 22 inch',
-    image: '/pc-vanphong-g6400.jpg',
+    image: '/pc-hp-g4.jpg',
     price: 4950000,
     oldPrice: 5600000,
     specs: [
@@ -334,7 +334,7 @@ export const products = [
     badge: 'Chính hãng',
     promoBadge: 'Chân xoay',
     name: 'Màn hình LCD Dell Professional P2419H 24 inch IPS Tràn Viền',
-    image: '/screen-dell-24.jpg',
+    image: '/lcd-dell-p2417.png',
     price: 2650000,
     oldPrice: 3200000,
     specs: [
