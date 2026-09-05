@@ -1,0 +1,47 @@
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding: 8px 12px;
+  gap: 8px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  height: 100%;
+}
+
+.cta-call {
+  background-color: var(--accent-call);
+}
+
+.cta-zalo {
+  background-color: var(--accent-zalo);
+}
+
+.cta-map {
+  background-color: #475569;
+}
+
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    display: flex;
+  }
+}

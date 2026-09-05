@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  tk-computer-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tk_computer_landing
+    restart: always
+    ports:
+      - "8080:80"

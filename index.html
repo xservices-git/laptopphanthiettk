@@ -1,13 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laptop Phan Thiết TK - Máy Tính Đồng Bộ Dell, HP, Workstation, Gaming</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b3b82" />
+    <meta name="color-scheme" content="light" />
+    <title>Chợ Điện Tử Phan Thiết - Sửa Chữa Laptop, PC, Tivi & Lắp Đặt Camera Tại Tiến Thành, Lâm Đồng</title>
+    <meta name="description" content="Chợ Điện Tử Phan Thiết tại 05 Trương Văn Ly, Tiến Thành, Lâm Đồng. Sửa chữa tivi tại nhà, thay LED màn hình, sửa laptop, máy tính bàn, lắp đặt camera an ninh uy tín, giá thợ." />
+    <meta name="keywords" content="Chợ Điện Tử Phan Thiết, sửa tivi Lâm Đồng, sửa tivi Tiến Thành, thay led tivi, sửa tivi tại nhà, lắp khung treo tivi, sửa laptop Tiến Thành, sửa máy tính Lâm Đồng, lắp camera Tiến Thành, bán laptop cũ Lâm Đồng" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chợ Điện Tử Phan Thiết - TIVI • LAPTOP • PC • CAMERA" />
+    <meta property="og:description" content="Chuyên sửa chữa, nâng cấp laptop, máy tính, tivi & lắp đặt camera tận nơi uy tín tại Tiến Thành, Lâm Đồng." />
+    <meta property="og:url" content="https://tivi.chodem.net" />
+    <meta property="og:image" content="/storefront.webp" />
+
+    <!-- Preload LCP hero image (WebP = best speed/quality balance) -->
+    <link rel="preload" as="image" href="/storefront.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/logo.webp" type="image/webp" fetchpriority="high" />
+
+    <!-- Self-hosted fonts (VI only, no third-party) -->
+    <link rel="preload" as="font" href="/fonts/pjs-vietnamese.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/fonts/pjs-latin.woff2" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+
+    <!-- Preload JS vendor chunk for faster React mount -->
+    <link rel="modulepreload" href="/assets/react-vendor-B4axNI-G.js" crossorigin>
+
+    <!-- Inline critical CSS to avoid render-blocking external CSS -->
+    <style>
+      *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+      html{scroll-behavior:smooth;background:#f8fafc;color:#0f172a;line-height:1.6;-webkit-font-smoothing:antialiased;font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+      body{overflow-x:hidden;padding-bottom:70px}
+      @media (min-width:769px){body{padding-bottom:0}}
+      a{color:inherit;text-decoration:none}
+      img{max-width:100%;height:auto;display:block}
+      button{font-family:inherit;cursor:pointer;border:none;background:none}
+      #root{min-height:100vh;display:flex;flex-direction:column}
+      .app{flex:1}
+      .container{max-width:1200px;margin:0 auto;padding:0 24px}
+      .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);height:76px;display:flex;align-items:center}
+      .header-container{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%}
+      .logo{display:flex;align-items:center;gap:12px}
+      .logo-img{width:44px;height:44px;border-radius:10px;object-fit:cover}
+      .brand-name{font-weight:800;font-size:1.1rem;color:#0b3b82;display:block;line-height:1.1}
+      .brand-sub{font-size:0.75rem;color:#64748b;display:block}
+      .nav-menu{display:flex;gap:28px;align-items:center}
+      .nav-menu a{font-weight:600;color:#0f172a;font-size:0.95rem}
+      .header-actions{display:flex;align-items:center;gap:12px}
+      .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 26px;font-size:1rem;font-weight:700;border-radius:9999px;transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap}
+      .btn-call{background:linear-gradient(135deg,#0b3b82 0%,#1e5bb8 100%);color:#fff;box-shadow:0 6px 20px -2px rgba(11,59,130,.35)}
+      .mobile-toggle{display:none}
+      .hero{position:relative;overflow:hidden;color:#fff}
+      .hero-slider{position:relative;width:100%;height:420px;min-height:420px}
+      @media (min-width:768px){.hero-slider{height:460px;min-height:460px}}
+      @media (min-width:1024px){.hero-slider{height:500px;min-height:500px}}
+      .hero-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .5s ease-in-out;display:flex;align-items:center;content-visibility:auto;contain-intrinsic-size:1200px 500px}
+      .hero-slide.active{opacity:1;visibility:visible}
+      .hero-slide.active .hero-container{animation:heroContentIn .6s ease-out .1s both}
+      @keyframes heroContentIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+      .check-icon{color:#16a34a;font-weight:bold}
+      .btn-call{background:linear-gradient(135deg,#0b3b82 0%,#1e5bb8 100%);color:#fff;box-shadow:0 6px 20px rgba(11,59,130,.35)}
+      .btn-lg{padding:16px 38px;font-size:1.15rem}
+      @media (max-width:768px){.btn-lg{padding:12px 26px;font-size:1rem}}
+      .hero-slide.active{opacity:1;visibility:visible}
+      .hero-bg-img-wrapper{position:absolute;inset:0;z-index:1}
+      .hero-bg-img{width:100%;height:100%;object-fit:cover}
+      .hero-slide-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,rgba(11,59,130,.92) 0%,rgba(30,64,175,.88) 100%)}
+      .hero-container{position:relative;z-index:10;padding:32px 24px}
+      @media (min-width:1024px){.hero-container{padding:48px 24px}}
+      .hero-content{max-width:680px;margin:0 auto;text-align:center}
+      .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);padding:8px 18px;border-radius:9999px;font-size:.9rem;font-weight:600;margin-bottom:14px}
+      .hero-title{font-size:2rem;font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px;text-shadow:0 2px 10px rgba(0,0,0,.3)}
+      @media (min-width:1024px){.hero-title{font-size:2.4rem}}
+      .hero-subtitle{font-size:1rem;color:rgba(255,255,255,.9);margin-bottom:22px}
+      @media (min-width:1024px){.hero-subtitle{font-size:1.1rem}}
+      .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+      .btn-lg{padding:12px 26px;font-size:1rem}
+      @media (max-width:768px){.hero-title{font-size:1.85rem}.hero-subtitle{font-size:.95rem}.nav-menu{display:none}.mobile-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;color:#0f172a}.hero-arrow{display:none}.hero-badge{font-size:.8rem;padding:6px 14px}.hero-features{font-size:.85rem;gap:14px}}
+    </style>
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["ComputerStore", "ElectronicsStore"],
+        "name": "Chợ Điện Tử Phan Thiết - TIVI - LAPTOP - PC - CAMERA",
+        "image": "https://tivi.chodem.net/storefront.webp",
+        "url": "https://tivi.chodem.net",
+        "hasMap": "https://maps.app.goo.gl/xfP3afdWSSRhaWyU8?g_st=ic",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "05 Trương Văn Ly",
+          "addressLocality": "Tiến Thành",
+          "addressRegion": "Lâm Đồng",
+          "postalCode": "80000",
+          "addressCountry": "VN"
+        },
+        "description": "Cửa hàng sửa chữa tivi tại nhà, thay LED màn hình, sửa chữa Laptop, máy tính bàn, nâng cấp linh kiện và lắp đặt Camera an ninh uy tín tại Tiến Thành, Lâm Đồng.",
+        "openingHours": "Mo-Su 08:00-20:00",
+        "sameAs": ["https://www.facebook.com/share/1F9rcTagD1/?mibextid=wwXIfr"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

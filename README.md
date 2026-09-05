@@ -1,16 +1,30 @@
-# React + Vite
+# TK Computer Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page chuẩn conversion rate optimization (CRO) cho **TK Computer - TIVI - LAPTOP - PC - CAMERA**.
 
-Currently, two official plugins are available:
+## 🚀 Chạy local (Development)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Website chạy tại: `http://localhost:5173`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🐳 Chạy Production bằng Docker
 
-## Expanding the Oxlint configuration
+```bash
+docker compose up -d --build
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Website serve qua Nginx tại: `http://localhost:8080`
+
+## ⚙️ Cấu hình thông tin cửa hàng & Analytics
+
+Chỉnh sửa tại `src/config/business.js`:
+- Phone
+- Zalo
+- Địa chỉ
+- Social links
+
+Tạo file `.env` từ `.env.example` để điền Tracking IDs (GA4, Pixel, TikTok, Google Ads).
