@@ -182,7 +182,7 @@ function App() {
                   <span className="banner-tag">ƯU ĐÃI THÁNG 9/2026</span>
                   <h2 className="banner-title">MÁY TÍNH ĐỒNG BỘ DELL & HP NHẬP KHẨU USA</h2>
                   <p className="banner-desc">
-                    Nguyên zin 100% - Siêu bền bỉ hoạt động 24/7. Trọn bộ kèm màn hình LCD giá chỉ từ 5.xxx.xxx đ. Tặng phím chuột + lắp đặt tại nhà miễn phí!
+                    Nguyên zin 100% - Siêu bền bỉ hoạt động 24/7. Trọn bộ kèm màn hình LCD giá cực tốt. Tặng phím chuột + lắp đặt tại nhà miễn phí!
                   </p>
                   <a href="tel:0938988999" className="banner-cta-btn">
                     <Phone size={18} /> GỌI TƯ VẤN: 0938.988.999
@@ -253,8 +253,7 @@ function App() {
                   {/* Title & Price */}
                   <h3 className="product-name">{p.name}</h3>
                   <div className="product-price-box">
-                    <span className="price-current">{formatVND(p.price)}</span>
-                    {p.oldPrice && <span className="price-old">{formatVND(p.oldPrice)}</span>}
+                    <span className="price-current">Liên hệ</span>
                   </div>
 
                   {/* Bullet Specs List */}
@@ -506,9 +505,7 @@ function App() {
               <div>
                 <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0f3057' }}>{activeModalProduct.name}</h3>
                 <div style={{ color: 'var(--primary-red)', fontSize: '1.4rem', fontWeight: 900, marginTop: 6 }}>
-                  {activeModalProduct.configs && activeModalProduct.configs[selectedConfigIdx]
-                    ? formatVND(activeModalProduct.configs[selectedConfigIdx].price)
-                    : formatVND(activeModalProduct.price)}
+                  Giá: Liên hệ
                 </div>
               </div>
             </div>
@@ -536,7 +533,7 @@ function App() {
                       <span style={{ fontWeight: selectedConfigIdx === idx ? 700 : 500, fontSize: '0.9rem' }}>
                         {cfg.name}
                       </span>
-                      <strong style={{ color: 'var(--primary-red)' }}>{formatVND(cfg.price)}</strong>
+                      <strong style={{ color: 'var(--primary-red)' }}>Liên hệ</strong>
                     </div>
                   ))}
                 </div>

@@ -60,28 +60,28 @@ export const services = [
   {
     id: 'repair-pc',
     title: 'Sửa Chữa & Cài Đặt Máy Tính, Laptop Tận Nơi',
-    price: 'Từ 100.000 đ',
+    price: 'Giá: Liên hệ',
     desc: 'Cài đặt Windows 10/11 Pro, Office, phần mềm đồ hoạ trọn đời. Vệ sinh tra keo tản nhiệt gốm xịn, khắc phục máy treo đơ, chậm, virus.',
     icon: 'Wrench'
   },
   {
     id: 'camera-install',
     title: 'Lắp Đặt Hệ Thống Camera Quan Sát An Ninh',
-    price: 'Trọn gói từ 650.000 đ',
+    price: 'Giá: Liên hệ',
     desc: 'Khảo sát và thi công camera cho nhà ở, văn phòng, quán cà phê, nhà xưởng tại Phan Thiết và các huyện lân cận. Bảo hành tận nhà 2 năm.',
     icon: 'ShieldCheck'
   },
   {
     id: 'tv-bracket',
     title: 'Lắp Đặt Giá Treo Tivi Áp Tường, Xoay Góc, Thả Trần',
-    price: 'Từ 200.000 đ',
+    price: 'Giá: Liên hệ',
     desc: 'Cung cấp và lắp đặt khung giá treo tivi từ 32 inch đến 85 inch an toàn, thẩm mỹ, giấu dây nguồn tinh tế cho phòng khách và phòng ngủ.',
     icon: 'Tv'
   },
   {
     id: 'trade-in',
     title: 'Thu Cũ Đổi Mới & Nâng Cấp Cấu Hình PC, Laptop',
-    price: 'Hỗ trợ giá cao nhất',
+    price: 'Giá: Liên hệ',
     desc: 'Nhận thu mua máy tính cũ hỏng, đổi sang máy mới cấu hình cao hơn bù tiền chênh lệch. Hỗ trợ trả góp 0% lãi suất qua thẻ tín dụng và CCCD.',
     icon: 'RefreshCw'
   }
